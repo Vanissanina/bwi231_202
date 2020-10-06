@@ -1,4 +1,4 @@
-package de.hs_lu.tutorium.tut2;
+package de.hs_lu.o2s.tutorium.tut2;
 
 public class Haus {
 	
