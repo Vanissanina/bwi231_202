@@ -37,6 +37,9 @@ public class Haus {
 	}
 
 	public String getStrasse() {
+		if (this.strasse == null) {
+			return "Strasse ist uns unbekannt";
+		}
 		return strasse;
 	}
 
@@ -67,5 +70,13 @@ public class Haus {
 	public void setGrundstuecksFlaeche(double grundstuecksFlaeche) {
 		this.grundstuecksFlaeche = grundstuecksFlaeche;
 	}
+
+//	@Override
+	public String toString() {
+		return "Haus in Straﬂe " + this.getStrasse() + " besitzt " + this.getEtagen() +
+		" Etagen und es wohnen " + this.getEinwohner() + " Personen dort.";
+	}
+	
+	
 	
 }
